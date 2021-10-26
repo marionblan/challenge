@@ -8,6 +8,7 @@ _Pre-requisites:_
 
 _To run locally:_
 
+* clone the project
 * start appium in console: **appium**
 * Open Android Studio and create an android emulator.
 * Start the emulator.
