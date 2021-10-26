@@ -39,10 +39,8 @@ public class OverviewPage extends BasePage {
 	   
 	   public void selectProductByName(String name) {
 		   int count = getProductList().size();
-		   System.out.println(count);
 		   for (int i=0; i<count;i++) {
 			   String text = ProductOverview.findElements(By.id("com.example.challenge:id/productName")).get(i).getText();
-			   System.out.println(text);
 			   if (text.equalsIgnoreCase(name)) {
 				   getProductList().get(i).click();
 				   break;

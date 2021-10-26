@@ -86,6 +86,8 @@ public class tests extends base {
 	@Test(description = "TC04 Verify that the Application name is displayed throughout the flow.")
 	public void VerifyApplicationName() {
 		String AppName = "Challenge";
+		
+		// From Overview page
 		Assert.assertEquals(o.getAppName(),AppName, "The Application name on Product Overview is not Challenge");
 		
 		// Go to Product page
@@ -97,15 +99,25 @@ public class tests extends base {
 		Assert.assertEquals(r.getAppName(),AppName, "The Application name on Product Review is not Challenge");
 	};
 	
-
+	// I was working on this test when the app stopped working (reason unknown) so I couldn't finish testing it
+	// If the scroll and select methods worked I would have updated the other tests with them as well, instead of the selectProductByIndex
 	@Test(description = "TC05 Verify that the user can navigate between pages.")
-	public void ScrollandSelectProduct() {
+	public void VerifyNavigationBetweenPages() {
 		String productName = "Wan Show";
-		// Go to Product page
-		o.scrollToProduct(driver, productName);
-		
+		// Scroll to product and select it
+		o.scrollToProduct(driver, productName);	
 		o.selectProductByName(productName);
-		p.ReviewButton.click();
+		
+		// Go back to overview + Make sure the selected product is still visible (not back to top)
+		
+		// Select another product and verify data is for this new product
+		
+		// Go until Review page
+		
+		// Go back to Product page
+		
+		// Go back to Overview + Make sure the selected product is still visible (not back to top)
+
 	};
 	
 
