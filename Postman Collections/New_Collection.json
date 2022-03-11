@@ -1,0 +1,133 @@
+{
+  "info": {
+    "_postman_id": "3b870371-7861-4f45-a502-0a8277e2cf3c",
+    "name": "New Collection",
+    "schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Get participations",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "id": "aa07e94b-30dd-46b6-896c-82b3e4bba9c8",
+            "exec": [
+              "pm.test(\"Status code is 200\", function () {\r",
+              "    pm.response.to.have.status(200);\r",
+              "});\r",
+              "\r",
+              "pm.test(\"Body matches string\", function () {\r",
+              "    pm.expect(pm.response.text()).to.include(\"id\");\r",
+              "});"
+            ],
+            "type": "text/javascript"
+          }
+        }
+      ],
+      "_postman_id": "4cee82ba-7eb3-4322-aae0-19a08e635cec",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": {
+            "token": "eyJraWQiOiJRQXRWNExPSkt0MGFGSmVvdU9KK0xFdW0yU2tPNHoxc0dGWExWR3FlTDNnPSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiJmMDc3YTgwZC03ZjEzLTRkMmItYjZmYS0xYjUzMDU1YzYyZDkiLCJjb2duaXRvOmdyb3VwcyI6WyJDT05UT19NQUlOVEVOQU5DRSIsIkFDQ09VTlRfQkFDS09GRklDRV9BRE1JTiIsIkJFX0lDVF9PUEVSQVRJT05TIiwiQkVfSUNUX01PTklUT1JJTkdfQUNUVUFUT1JTIiwiTVVMVElGT1JDRSIsIlJFTEFUSU9OX0NSRUFURSIsIlVTRVIiLCJCUk9BRENBU1RJTkdfU1VCU0NSSUJFIiwiQ09OVE9fQURNSU4iLCJBQ0NPVU5UX09QUyIsIlJFTEFUSU9OX1ZJRVciLCJCRV9DT01QTElBTkNFX09GRklDRVIiLCJCRV9HRU5FUkFMX01BTkFHRU1FTlQiLCJSRUxBVElPTl9BRE1JTiIsIkJFX0FETUlOSVNUUkFUT1IiLCJCRV9BTExDT05UUkFDVFMiLCJBQ0NPVU5UX0dST1VQU19BRE1JTiIsIlNVU1RBSU5BQkxFX0FETUlOIiwiUkVMQVRJT05fRU1BSUxfU1RBVFVTIiwiUkVMQVRJT05fTUFJTlRFTkFOQ0UiLCJSRUxBVElPTl9FRElUIiwiUkVMQVRJT05TX0FETUlOIiwiQWNjb3VudE1hbmFnZXIiLCJCRV9BQU5QQVNTRU5fR0VCUlVJS0VSUyIsIlJFTEFUSU9OX1ZBVF9FWENFUFRJT05TIiwiQ09OVE9fVklFVyIsIk1FVEVSSU5HX0FETUlOX1NVU1RBSU5BQkxFIiwiQUJBQ1VTX0FETUlOSVNUUkFUSU9OIiwiQUNDT1VOVF9BRE1JTiIsIkJFX0ZJTkFOQ0VfTUFOQUdFUiIsIkNPTlRPX09QU19TRU5JT1IiLCJDT05UT19PUFMiLCJJTVBFUlNPTkFURSIsIlNVU1RBSU5BQkxFX1ZJRVciLCJDT05UT19CQUNLT0ZGSUNFIl0sImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJjdXN0b206ZG9tYWluIjoiQkFDS09GRklDRSIsImN1c3RvbTppc19pbXBlcnNvbmF0b3IiOiJmYWxzZSIsImlzcyI6Imh0dHBzOlwvXC9jb2duaXRvLWlkcC5ldS13ZXN0LTEuYW1hem9uYXdzLmNvbVwvZXUtd2VzdC0xX0V6eUd1SGtwTCIsImNvZ25pdG86dXNlcm5hbWUiOiJtYXJpb24uYmxhbnF1YXJ0QHNlcnZpY2Vob3VzZS5ubCIsInByZWZlcnJlZF91c2VybmFtZSI6Im1hcmlvbi5ibGFucXVhcnRAc2VydmljZWhvdXNlLm5sIiwiZ2l2ZW5fbmFtZSI6Ik1hcmlvbiIsImN1c3RvbTpyZWxhdGlvbl9pZCI6IjAwMDAwMDAwLTAwMDAtMDAwMC0wMDAwLTAwMDAwMDAwMDAwMCIsImF1ZCI6IjRrYmduOTlwNHBvZnNqZWw0MjdjNW42b21nIiwiY3VzdG9tOnNlbGxlcl9pZCI6IjAwMDAwMDAwLTAwMDAtMDAwMC0wMDAwLTAwMDAwMDAwMDAwMCIsImV2ZW50X2lkIjoiYmRkZTBlMWEtZjMwZS00YTQxLWI0ZmQtYjVhNTA5YmVlOGIwIiwidG9rZW5fdXNlIjoiaWQiLCJhdXRoX3RpbWUiOjE2NDcwMDUwMzcsImN1c3RvbTphY2NvdW50X2lkIjoiNmJhZTRhMDMtZjQwMy00NjExLWI4YzItMjM3MjExMzQ5ZDljIiwiZXhwIjoxNjQ3MDEyMjUzLCJjdXN0b206ZGVidG9yX251bWJlciI6IjAwMDAwMDAwLTAwMDAtMDAwMC0wMDAwLTAwMDAwMDAwMDAwMCIsImlhdCI6MTY0NzAwODY1MywiZmFtaWx5X25hbWUiOiJCbGFucXVhcnQiLCJlbWFpbCI6Im1hcmlvbi5ibGFucXVhcnRAc2VydmljZWhvdXNlLm5sIn0.PHz_g2tUX00pCv8BzoFJedhoarFYuEaoNDChWrt7I6FqbPTTKjA2VXQb68M3sg2s7CzRiZz1Mru9mzhfEpovD8d5gtO_4mmMxMBfkuATWVEms2Ung2Uwg8jVCghpvw3dzpRmiYjU4P5VXOjBbLDC1dAT2CDsvGPP9zOCJv4JRBVx3_xDplNEqBl5dZ4yD1pmX6Jtqn5lefV-U_AeHkb0UwPTRXHDQ5kIMtADHJstDcovwgZAXF6BZCeAS1CdQsgWD3tc-CNx6tlsNaNUYy7dvqy4ZuzWSepSOWtXqY0sFZPGfsA04DgWQsZ192JkmboF1vUSLaQaJQw1GgOC6J1KjA"
+          }
+        },
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"offset\": 0,\r\n    \"limit\": 50,\r\n    \"filters\": {\r\n        \"projectId\": 8275\r\n    }\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://multiforce-backoffice-site.tst.aws.servicehouse.nl/admin/groups?page=0&size=50&sort=name,ASC",
+          "protocol": "https",
+          "host": [
+            "multiforce-backoffice-site",
+            "tst",
+            "aws",
+            "servicehouse",
+            "nl"
+          ],
+          "path": [
+            "admin",
+            "groups"
+          ],
+          "query": [
+            {
+              "key": "filters.projectId",
+              "value": "8275",
+              "disabled": true
+            },
+            {
+              "key": "sort",
+              "value": "warnings,desc",
+              "disabled": true
+            },
+            {
+              "key": "sort",
+              "value": "startDate,desc",
+              "disabled": true
+            },
+            {
+              "key": "sort",
+              "value": "participation_identifier,desc",
+              "disabled": true
+            },
+            {
+              "key": "page",
+              "value": "0"
+            },
+            {
+              "key": "size",
+              "value": "50"
+            },
+            {
+              "key": "sort",
+              "value": "name,ASC"
+            }
+          ]
+        }
+      },
+      "response": []
+    }
+  ],
+  "auth": {
+    "type": "apikey",
+    "apikey": {
+      "in": "header",
+      "value": "{{postman_api_key}}",
+      "key": "X-API-KEY"
+    }
+  },
+  "event": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "id": "b010e537-ca2d-4e0e-ac00-dfb7d6b854bc",
+        "type": "text/javascript",
+        "exec": [
+          ""
+        ]
+      }
+    },
+    {
+      "listen": "test",
+      "script": {
+        "id": "da6ca9a7-a91c-48b1-8e94-6c8593e44efa",
+        "type": "text/javascript",
+        "exec": [
+          ""
+        ]
+      }
+    }
+  ]
+}
