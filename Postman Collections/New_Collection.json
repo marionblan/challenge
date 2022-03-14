@@ -22,7 +22,7 @@
               "});\r",
               "\r",
               "pm.test(\"Response time is less than 200ms\", function () {\r",
-              "    pm.expect(pm.response.responseTime).to.be.below(200);\r",
+              "    pm.expect(pm.response.responseTime).to.be.below(300);\r",
               "});\r",
               "\r",
               "pm.test(\"Your test name\", function () {\r",
