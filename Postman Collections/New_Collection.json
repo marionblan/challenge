@@ -112,16 +112,15 @@
   "auth": {
     "type": "apikey",
     "apikey": {
-      "in": "header",
-      "value": "{{postman_api_key}}",
-      "key": "X-API-KEY"
+      "key": "X-API-KEY",
+      "value": "{{postman_api_key}}"
     }
   },
   "event": [
     {
       "listen": "prerequest",
       "script": {
-        "id": "b010e537-ca2d-4e0e-ac00-dfb7d6b854bc",
+        "id": "82f71ae8-0571-4658-9a92-a7309cfad372",
         "type": "text/javascript",
         "exec": [
           ""
@@ -131,7 +130,7 @@
     {
       "listen": "test",
       "script": {
-        "id": "da6ca9a7-a91c-48b1-8e94-6c8593e44efa",
+        "id": "57b97609-185d-4f15-8378-fb0c1ab54cb6",
         "type": "text/javascript",
         "exec": [
           ""
