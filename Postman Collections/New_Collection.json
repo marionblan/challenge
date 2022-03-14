@@ -109,18 +109,11 @@
       "response": []
     }
   ],
-  "auth": {
-    "type": "apikey",
-    "apikey": {
-      "key": "X-API-KEY",
-      "value": "{{postman_api_key}}"
-    }
-  },
   "event": [
     {
       "listen": "prerequest",
       "script": {
-        "id": "82f71ae8-0571-4658-9a92-a7309cfad372",
+        "id": "9a40b63b-b2f1-44f9-8d79-cc043acea08f",
         "type": "text/javascript",
         "exec": [
           ""
@@ -130,7 +123,7 @@
     {
       "listen": "test",
       "script": {
-        "id": "57b97609-185d-4f15-8378-fb0c1ab54cb6",
+        "id": "7ed9527d-54ee-4a95-8bb4-ad3d11e6f198",
         "type": "text/javascript",
         "exec": [
           ""
